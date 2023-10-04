@@ -1,13 +1,86 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+margin: 0;
+}
+.top_pane {
+background-color: hsl(225, 6%, 25%);
+}
+.top_bar {
+    width: 100%;
+    height : 50px;
+    background-color: black;
+}
+.top_bar h3 {
+    padding: 10px 20px;
+    color: #ccc;
+}
+.pane {
+height: 70vh;
+display: flex;
+overflow: hidden;
+}
+.code-pen {
+position: relative;
+overflow: hidden;
+}
+.Editor_Container {
+flex-grow: 1;
+width: 400px;
+flex-basis: 0;
+display: flex;
+flex-direction: column;
+padding: .5rem;
+background-color: hsl(225, 6%, 25%);
+resize: both;
+/* height: 50px; */
+
+}
+.Editor_Container.collapsedEditor {
+flex-grow: 0;
+width: 120px;
+
+}
+.Editor_title {
+display: flex;
+justify-content: space-between;
+align-items: center;
+background-color: hsl(225, 6%, 13%);
+border: 1px solid grey;
+box-shadow: 1px 2px 1px rgb(40, 37, 37);
+padding: 10px;
+border-top-right-radius: 0.5rem;
+border-top-left-radius: 0.5rem;
+
+}
+.Editor_title p {
+color: rgb(186, 178, 178);
+text-transform: uppercase;
+font-weight: 600;
+font-size: 17px;
+}
+.Editor_title button {
+border: 1px solid #ccc;
+background-color: transparent;
+height: 40px;
+padding: 0 10px;
+cursor: pointer;
+
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.icons {
+color: white;
+font-size: 20px;
+font-weight: 700;
 }
+
+
+.pane_bottom {
+width: 100%;
+background-color: white;
+bottom: 0;
+cursor: pointer;
+
+
+
+}
+
+
